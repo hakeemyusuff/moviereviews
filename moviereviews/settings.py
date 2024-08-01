@@ -79,11 +79,8 @@ WSGI_APPLICATION = "moviereviews.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "moviereviews",
-        "USER": "root",
-        "PASSWORD": "",
-        "HOST": "localhost",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
